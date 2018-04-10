@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 30%;
+    margin: 5% auto;
+    text-align: center;
+}
+.container div, 
+.container #input{
+    width: 100%;
+}
+.container #input{
+    margin-bottom: 2%;
+    padding: 4%;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container div span{
+    background-color: #ddd;
+    font-size: 3rem;
+    display: inline-block;
+    width: 24%;
+    padding: 20px;
+    margin: 5px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container #equal,
+.container #negative{
+    width: 49%;
+}
