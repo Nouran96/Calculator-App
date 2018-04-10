@@ -33,3 +33,27 @@
 .container #negative{
     width: 49%;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1013px){
+    .container{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 613px) and (max-width: 799px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 612px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 389px){
+    .container{
+        width: 100%;
+    }
+}
