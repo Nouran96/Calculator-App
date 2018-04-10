@@ -39,13 +39,13 @@ for(var i = 0; i < digits.length; i++){
         } else{
             this.style.backgroundColor = 'grey';
         }
-    });
-    /*digits[i].addEventListener('mousedown', function(){
-        this.style.backgroundColor = "#999";
+    });*/
+    digits[i].addEventListener('mousedown', function(){
+        this.style.transform = 'scale(0.9)';
     });
     digits[i].addEventListener('mouseup', function(){
-        this.style.backgroundColor = "#ddd";
-    });*/
+        this.style.transform = 'scale(1)';
+    });
 }
 
 /* 
