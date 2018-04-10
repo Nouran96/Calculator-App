@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 .container{
     /* Make the div takes the whole viewport height */
     height: 100vh;
@@ -10,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     width: 30%;
-    margin: 2% auto;
+    margin: 0 auto;
     text-align: center;
 }
 .container div, 
@@ -27,7 +31,6 @@
     font-weight: bold;
 }
 .container div span{
-    background-color: #ddd;
     font-size: 3rem;
     display: inline-block;
     width: 24%;
@@ -36,9 +39,24 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.royalBlue{
+    background-color: #758cd4;
+}
+.grey{
+    background-color: #ddd;
+}
+.royalBlue:hover{
+    background-color: #5870bb;
+}
+.grey:hover{
+    background-color: #9E9E9E;
+}
 .container #equal,
 .container #negative{
     width: 49%;
+}
+.container #erase{
+    color: rgb(196, 21, 21);
 }
 
 @media screen and (min-width: 800px) and (max-width: 1013px){

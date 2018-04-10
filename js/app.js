@@ -26,18 +26,26 @@ for(var i = 0; i < digits.length; i++){
         }
     });
 
-    digits[i].addEventListener('mouseover', function(){
-        this.style.backgroundColor = "#ccc";
+    /*digits[i].addEventListener('mouseover', function(){
+        if(this.classList.contains('royalBlue')){
+            this.style.backgroundColor = '#5870bb';
+        } else{
+            this.style.backgroundColor = '#9E9E9E';
+        }
     });
     digits[i].addEventListener('mouseout', function(){
-        this.style.backgroundColor = "#ddd";
+        if(this.classList.contains('royalBlue')){
+            this.style.backgroundColor = '#758cd4';
+        } else{
+            this.style.backgroundColor = 'grey';
+        }
     });
-    digits[i].addEventListener('mousedown', function(){
+    /*digits[i].addEventListener('mousedown', function(){
         this.style.backgroundColor = "#999";
     });
     digits[i].addEventListener('mouseup', function(){
         this.style.backgroundColor = "#ddd";
-    });
+    });*/
 }
 
 /* 
