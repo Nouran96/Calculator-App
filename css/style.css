@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 .container{
+    /* Make the div takes the whole viewport height */
+    height: 100vh;
+
+    /* The following three properties to center the div vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 30%;
     margin: 2% auto;
     text-align: center;
@@ -55,5 +62,9 @@
 @media screen and (max-width: 389px){
     .container{
         width: 100%;
+        margin: 0 auto;
+    }
+    .container div span{
+        padding: 15px;
     }
 }
