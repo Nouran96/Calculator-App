@@ -3,7 +3,7 @@
 }
 .container{
     width: 30%;
-    margin: 5% auto;
+    margin: 2% auto;
     text-align: center;
 }
 .container div, 
@@ -12,7 +12,8 @@
 }
 .container #input{
     margin-bottom: 2%;
-    padding: 4%;
+    padding: 2% 3%;
+    min-height: 55px;
     border: 1px solid black;
     border-radius: 5px;
     font-size: 2rem;
