@@ -59,15 +59,14 @@ function calculate(str){
     for(var i = 0; i < arr.length; i++){
         if(arr[i] === '/'){
             result = determineOperation(i, arr[i]);
-            i--;
         }
-        else if (arr[i] === '*'){
+        else if (arr[i] === 'x'){
             result = determineOperation(i, arr[i]);
-            i--;
         }
         else{
             continue;
         }
+        i--;
     }
 
     /* 
@@ -78,15 +77,14 @@ function calculate(str){
     for(var i = 0; i < arr.length; i++){
         if(arr[i] === '+'){
             result = determineOperation(i, arr[i]);
-            i--;
         }
         else if (arr[i] === '-'){
             result = determineOperation(i, arr[i]);
-            i--;
         }
         else{
             continue;
         }
+        i--;
     }
 
     input.textContent = result;
@@ -101,7 +99,7 @@ function determineOperation(index, operator){
             result = Number(arr[index - 1]) / Number(arr[index + 1]);
             console.log(result + "divide");
             break;
-        case '*':
+        case 'x':
             result = Number(arr[index - 1]) * Number(arr[index + 1]);
             console.log(result + "times");
             break;

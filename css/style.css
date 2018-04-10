@@ -62,9 +62,5 @@
 @media screen and (max-width: 389px){
     .container{
         width: 100%;
-        margin: 0 auto;
-    }
-    .container div span{
-        padding: 15px;
     }
 }
