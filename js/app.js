@@ -41,9 +41,23 @@ for(var i = 0; i < digits.length; i++){
         }
     });*/
     digits[i].addEventListener('mousedown', function(){
+        this.style.webkitTransform = 'scale(0.9)';
+        this.style.msTransform = 'scale(0.9)';
         this.style.transform = 'scale(0.9)';
     });
     digits[i].addEventListener('mouseup', function(){
+        this.style.webkitTransform = 'scale(1)';
+        this.style.msTransform = 'scale(1)';
+        this.style.transform = 'scale(1)';
+    });
+    digits[i].addEventListener('touchstart', function(){
+        this.style.webkitTransform = 'scale(0.9)';
+        this.style.msTransform = 'scale(0.9)';
+        this.style.transform = 'scale(0.9)';
+    });
+    digits[i].addEventListener('touchend', function(){
+        this.style.webkitTransform = 'scale(1)';
+        this.style.msTransform = 'scale(1)';
         this.style.transform = 'scale(1)';
     });
 }
