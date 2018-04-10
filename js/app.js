@@ -25,6 +25,19 @@ for(var i = 0; i < digits.length; i++){
             input.textContent = "";
         }
     });
+
+    digits[i].addEventListener('mouseover', function(){
+        this.style.backgroundColor = "#ccc";
+    });
+    digits[i].addEventListener('mouseout', function(){
+        this.style.backgroundColor = "#ddd";
+    });
+    digits[i].addEventListener('mousedown', function(){
+        this.style.backgroundColor = "#999";
+    });
+    digits[i].addEventListener('mouseup', function(){
+        this.style.backgroundColor = "#ddd";
+    });
 }
 
 /* 
