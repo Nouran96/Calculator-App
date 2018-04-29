@@ -26,20 +26,6 @@ for(var i = 0; i < digits.length; i++){
         }
     });
 
-    /*digits[i].addEventListener('mouseover', function(){
-        if(this.classList.contains('royalBlue')){
-            this.style.backgroundColor = '#5870bb';
-        } else{
-            this.style.backgroundColor = '#9E9E9E';
-        }
-    });
-    digits[i].addEventListener('mouseout', function(){
-        if(this.classList.contains('royalBlue')){
-            this.style.backgroundColor = '#758cd4';
-        } else{
-            this.style.backgroundColor = 'grey';
-        }
-    });*/
     digits[i].addEventListener('mousedown', function(){
         this.style.webkitTransform = 'scale(0.8)';
         this.style.msTransform = 'scale(0.8)';
